@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fbfdff;
+}
+.container{
+    position: relative;
+    display: flex; 
+ 
+}
+.container .card{
+    position: relative;
+    width: 250px;
+    height: 450px;
+    background: #e6f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 35px;
+    box-shadow: 0 5rem 8rem rgba(0, 0, 0, .50);   
+}
+.content-1{
+    position: relative;
+    width:100%;
+    height: 40%;
+    background-image: 
+    linear-gradient(to bottom right,#caad06,#eee785);
+}
+.content-1::after{
+    content: 'GO WILD TOTE';
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    font-size: 1em;
+    font-weight: 800;
+    color: rgb(39, 48, 1); 
+}
+
+.content-1 span{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color:#e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.content-1 .main-image img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 36%;
+    left: 3.5%;
+    align-items: center;
+    z-index: 1; 
+}
+.content-2{
+    position: relative;
+    padding: 35px 20px 20px;
+}
+.content-1 .main-image {
+    box-shadow: 0px 0px px grey;
+}
+.branding h4{
+    font-size: 12px;
+    font-weight: 500;
+    color: #464444;
+    text-transform: capitalize;
+}
+.price{
+    display: flex;
+    margin: 55px 0 10px;   
+}
+.space{
+    flex: 1.5;
+}
+.price span{
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.btn-change{
+    height: 30px;
+    width: 100px;
+    background: #a39d7a;
+    margin: 20px;
+    border: 10px;
+    color: rgb(8, 8, 8);
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: 600;
+}
+.btn-change:hover{ 
+    background: #caad06;
+}
+
+@media only screen and (max-width: 953px) {
+    .container{
+        flex-direction: column;
+    }
+  }
